@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirecting to Lithe Audio Training</title>
+  <!-- Auto redirect after 2 seconds -->
   <meta http-equiv="refresh" content="2; url=https://training.litheaudio.com/#/home">
   <style>
     body {
@@ -31,7 +32,7 @@
     a:hover { text-decoration: underline; }
   </style>
   <script>
-    // JavaScript fallback redirect
+    // Fallback redirect in case meta refresh doesn't work
     setTimeout(function() {
       window.location.href = "https://training.litheaudio.com/#/home";
     }, 2000);
@@ -40,6 +41,4 @@
 <body>
   <div class="spinner"></div>
   <h1>Redirecting to Lithe Audio Training...</h1>
-  <p>If you are not redirected automatically, <a href="https://training.litheaudio.com/#/home">click here</a>.</p>
-</body>
-</html>
+  <p>If you are not redirected automatically, <a href="https://training.litheaudio.com/#/home">click here
