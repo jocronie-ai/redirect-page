@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to Lithe Audio Training...</title>
+  <title>Redirecting to Lithe Audio Training</title>
+  <meta http-equiv="refresh" content="2; url=https://training.litheaudio.com/#/home">
   <style>
     body {
       display: flex;
@@ -13,8 +14,8 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f9fafb;
-      color: #333;
       text-align: center;
+      color: #333;
     }
     .spinner {
       width: 50px;
@@ -30,16 +31,10 @@
     a:hover { text-decoration: underline; }
   </style>
   <script>
-    // Detect broken URL pattern
-    let currentURL = window.location.href;
-
-    // If the URL contains the broken part, redirect to correct URL
-    if (currentURL.includes("https//training.litheaudio.com")) {
+    // JavaScript fallback redirect
+    setTimeout(function() {
       window.location.href = "https://training.litheaudio.com/#/home";
-    } else {
-      // Default redirect (optional)
-      window.location.href = "https://training.litheaudio.com/#/home";
-    }
+    }, 2000);
   </script>
 </head>
 <body>
