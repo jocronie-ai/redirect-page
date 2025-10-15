@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Lithe Audio Training...</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      color: #333;
+      text-align: center;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 6px solid #ddd;
+      border-top-color: #0078d7;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    a { color: #0078d7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+  <script>
+    // Detect broken URL pattern
+    let currentURL = window.location.href;
+
+    // If the URL contains the broken part, redirect to correct URL
+    if (currentURL.includes("https//training.litheaudio.com")) {
+      window.location.href = "https://training.litheaudio.com/#/home";
+    } else {
+      // Default redirect (optional)
+      window.location.href = "https://training.litheaudio.com/#/home";
+    }
+  </script>
+</head>
+<body>
+  <div class="spinner"></div>
+  <h1>Redirecting to Lithe Audio Training...</h1>
+  <p>If you are not redirected automatically, <a href="https://training.litheaudio.com/#/home">click here</a>.</p>
+</body>
+</html>
